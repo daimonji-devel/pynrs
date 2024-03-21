@@ -17,4 +17,4 @@ if __name__ == '__main__':
     t = time.time()
     assert is_prime(2 ** 64 - 59) == True
     dt = time.time() - t
-    print(f'proving that 2**64-59 with Rust from Python needed {dt:5.3f} s')
+    print(f'proving that 2**64-59 is prime with Rust from Python needed {dt:5.3f} s')
