@@ -1,0 +1,26 @@
+### 1. trying all numbers until sqrt #############################
+Mersenne Prime 61 in Python needed 77.699 s
+Mersenne Prime 61 in Rust needed 2.291 s
+proving that 2**64-59 is prime in Rust needed 6.501 s
+
+### 2. using a bool array ########################################
+creating sieve of size 1518500249 with Python needed 948 s
+Mersenne Prime 61 in Python with boolarray needed 110.838 s
+creating sieve of size 4294967296 in Rust needed 33 s
+Mersenne Prime 61 in Rust with boolarray needed 1.513 s
+proving that 2**64-59 is prime in Rust with boolarray needed 4.237 s
+
+### 3. using an integer array ####################################
+creating sieve of size 1518500249 in Python needed 911 s
+converting sieve into list of primes in Python needed 106 s
+Mersenne Prime 61 in Python with list of ints needed 4.419 s
+creating sieve of size 4294967296 in Rust needed 34 s
+converting sieve into list of primes with Rust needed 4 s
+Mersenne Prime 61 in Rust with list of ints needed 0.114 s
+proving that 2**64-59 is prime in Rust with list of ints needed 0.306 s
+
+### 3b. combining Python and Rust ################################
+creating sieve of size 4294967296 in Rust needed 34 s
+converting sieve into list of primes with Rust needed 4 s
+proving Mersenne Prime 61 with Rust from Python needed 0.117 s
+proving that 2**64-59 is prime with Rust from Python needed 0.315 s
